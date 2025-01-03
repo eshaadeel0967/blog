@@ -13,14 +13,23 @@ interface Comment {
 const [comments, setComments] = useState<Comment[]>([]);
   
   
-  const fetchComments = async (): Promise<Comment[]> => {
-    const response = await fetch('https://dummyjson.com/comments');
-    const data = await response.json();
-    return data.comments;
-  };
 
-  useEffect(() => {
-    fetchComments().then(setComments).catch(console.error);
+useEffect(() => {
+    const fetchComments = async (): Promise<Comment[]> => {
+      const response = await fetch('https://dummyjson.com/comments');
+      const data = await response.json();
+      return data.comments;
+    };
+    const loadComments = async () => {
+      try {
+        const data = await fetchComments();
+        setComments(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    loadComments(); 
   }, []);
   const handleAddComment = () => {
     const inputElements = document.getElementsByTagName('input');

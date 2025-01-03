@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -8,7 +8,7 @@ export default function ContactPage() {
     message: '',
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -16,7 +16,7 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
   };
@@ -25,7 +25,7 @@ export default function ContactPage() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-5">
       <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
       <p className="text-lg text-gray-700 mb-8 text-center">
-        We'd love to hear from you! Whether you have a question about our blog, feedback,
+        We&#39;d love to hear from you! Whether you have a question about our blog, feedback,
         <br /> or just want to say hello, feel free to reach out.
       </p>
       <form onSubmit={handleSubmit} className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
