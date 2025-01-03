@@ -109,6 +109,8 @@ const SwipeableCards = () => {
               <Image
                 src={card.mainImage.url}
                 alt={card.title}
+                width={600}
+                height={900}
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
