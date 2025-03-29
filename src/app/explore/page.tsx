@@ -74,10 +74,10 @@ const SwipeableCards = () => {
   return (
     <div>
       <div className="flex flex-col justify-start text-center p-5 items-center min-h-screen bg-gray-100 pt-8">
-        <h1 className="text-4xl font-bold text-center pt-20">
+        <h1 className="text-4xl font-bold text-center pt-20 text-black">
           Explore the Topics you Love ❤️
         </h1>
-        <p className="pb-10 pt-4">
+        <p className="pb-10 pt-4 text-black">
         This blog delves into the world of notorious criminal cases, investigative breakthroughs, forensic insights, and the psychology behind crime, bringing you closer to the mysteries that shape our understanding of justice.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
