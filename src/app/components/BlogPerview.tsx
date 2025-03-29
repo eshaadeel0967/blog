@@ -80,10 +80,10 @@ const SwipeableCards = () => {
 
   return (
     <div className="flex flex-col justify-start text-center p-5 items-center min-h-screen bg-gray-100 pt-8">
-      <h1 className="text-4xl font-bold text-center pt-20">
+      <h1 className="text-4xl font-bold text-center pt-20 text-grey-400">
       Welcome to the Ultimate Lifestyle Blog
       </h1>
-      <p className="pb-10 pt-4 ">
+      <p className="pb-10 pt-4 text-grey-400 ">
         This blog brings together styling advice, healthy diet tips, travel adventures, and the latest trends to help you live your best life.</p>
       <Swiper
         spaceBetween={30}
