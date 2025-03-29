@@ -23,7 +23,7 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-5">
-      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
+      <h1 className="text-4xl font-bold mb-6 text-black">Contact Us</h1>
       <p className="text-lg text-gray-700 mb-8 text-center">
         We&#39;d love to hear from you! Whether you have a question about our blog, feedback,
         <br /> or just want to say hello, feel free to reach out.
