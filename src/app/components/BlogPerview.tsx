@@ -83,7 +83,7 @@ const SwipeableCards = () => {
       <h1 className="text-4xl font-bold text-center pt-20 text-grey-400">
       Welcome to the Ultimate Lifestyle Blog
       </h1>
-      <p className="pb-10 pt-4 text-grey-400 ">
+      <p className="pb-10 pt-4 text-black ">
         This blog brings together styling advice, healthy diet tips, travel adventures, and the latest trends to help you live your best life.</p>
       <Swiper
         spaceBetween={30}
